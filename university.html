@@ -10,12 +10,11 @@
     <title>Universities</title>
 </head>
 
-<body>
-    <div class="container" style="background: lightseagreen;">
+<body style="background: lightgray;">
+    <div class="container">
         <div>
-            <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseComponent" role="button" aria-expanded="false" aria-controls="collapseExample" id="test1">
-                Universitys in Canada
-              </a>
+            <a id="collapseButton" class="btn btn-success" data-bs-toggle="collapse" href="#collapseComponent" role="button" aria-expanded="false" aria-controls="collapseExample">
+            </a>
         </div>
         <div class="collapse" id="collapseComponent">
             <div class="card card-body">
@@ -26,12 +25,16 @@
         </div>
         <div>
             <form>
-                <select class="btn btn-warning md target" name="test">
-                        <option value="Canada" selected="selected">Canada</option>
-                        <option value="United+States">United+States</option>
+                <select class="btn btn-warning" id="target">
+                  <option value="Canada" selected="selected">Canada</option>
+                  <option value="United+States">United States</option>
+                  <option value="India">India</option>
+                  <option value="United+Kingdom">United Kingdom</option>
                 </select>
             </form>
+                <button class="btn btn-secondary" onclick="addVal()">Add</button>
         </div>
+
 
     </div>
     <script src="university.js"></script>
