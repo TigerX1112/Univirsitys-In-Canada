@@ -1,8 +1,5 @@
 $(document).ready(function() {
-    $.get('countries.json', function(data, status){
-        more_countrys = data;
-    });
-
+    
     setButtonText();
     generateUniversitiesList(getSelectedValue());
 
@@ -31,14 +28,5 @@ $(document).ready(function() {
 
     function setButtonText() {
         $("#collapseButton").html("Universities in " + $('#target').find(":selected").text());
-    }
-    
-    function addVal() {
-        optionText = more_countrys[Math.random().name];
-        optionValue = more_countrys[Math.random().name];
-  
-            $('.test').append(`<option value="${optionValue}">
-                                       ${optionText}
-                                       </option>`);
     }
 });
